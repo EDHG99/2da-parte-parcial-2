@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Edgar Josué Hernández González">
+  <meta name="description" content="Formulario de registro maquetado con HTML5 semántico y CSS Grid/Flexbox.">
+  <title>registro</title>
+  <link rel="stylesheet" href="registro.css">
+</head>
+
+<body>
+
+  <main class="pagina">
+
+    <section class="tarjeta" aria-labelledby="titulo-registro">
+
+      <h1 class="tarjeta__titulo" id="titulo-registro">Registro</h1>
+
+      <form class="formulario" action="#" method="post" novalidate>
+
+        <div class="formulario__rejilla">
+
+          <div class="campo">
+            <label class="campo__etiqueta" for="nombre">Nombre completo</label>
+            <input class="campo__control" type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo"
+              autocomplete="nombre">
+          </div>
+
+          <div class="campo">
+            <label class="campo__etiqueta" for="usuario">usuario</label>
+            <input class="campo__control" type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario"
+              autocomplete="username">
+          </div>
+
+          <div class="campo">
+            <label class="campo__etiqueta" for="correo">Email</label>
+            <input class="campo__control" type="email" id="correo" name="correo" placeholder="ingresa tu email"
+              autocomplete="email">
+          </div>
+
+          <div class="campo">
+            <label class="campo__etiqueta" for="telefono">celular</label>
+            <input class="campo__control" type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número de celular"
+              autocomplete="tel">
+          </div>
+
+          <div class="campo">
+            <label class="campo__etiqueta" for="contrasena">Contraseña</label>
+            <input class="campo__control" type="password" id="contrasena" name="contrasena"
+              placeholder="Ingresa tu contraseña" autocomplete="nueva-contraseña">
+          </div>
+
+          <div class="campo">
+            <label class="campo__etiqueta" for="confirmar">Confirmar Contraseña</label>
+            <input class="campo__control" type="password" id="confirmar" name="confirmar"
+              placeholder="Confirm your password" autocomplete="nueva-contraseña">
+          </div>
+
+        </div>
+
+        <fieldset class="genero">
+          <legend class="genero__titulo">genero</legend>
+
+          <div class="genero__opciones">
+
+            <label class="opcion" for="genero-masculino">
+              <input class="opcion__radio" type="radio" id="genero-masculino" name="genero" value="masculino">
+              <span class="opcion__texto">masculino</span>
+            </label>
+
+            <label class="opcion" for="genero-femenino">
+              <input class="opcion__radio" type="radio" id="genero-femenino" name="genero" value="femenino">
+              <span class="opcion__texto">femenino</span>
+            </label>
+
+            <label class="opcion" for="genero-reservado">
+              <input class="opcion__radio" type="radio" id="genero-reservado" name="genero" value="reservado">
+              <span class="opcion__texto">prefiero no decirlo</span>
+            </label>
+
+          </div>
+        </fieldset>
+
+        <button class="boton" type="submit">registrar</button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>
